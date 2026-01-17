@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <radialGradient id="grad6" cx="0.3" cy="0.7" r="0.9">
+      <stop offset="0" stop-color="#ffe1f1"/>
+      <stop offset="1" stop-color="#1a111f"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="#0b0a0f"/>
+  <rect x="50" y="70" width="700" height="860" rx="80" fill="url(#grad6)"/>
+  <rect x="120" y="180" width="560" height="200" rx="80" fill="rgba(255,79,163,0.3)"/>
+  <rect x="120" y="420" width="560" height="200" rx="80" fill="rgba(0,0,0,0.2)"/>
+  <rect x="120" y="660" width="560" height="200" rx="80" fill="rgba(255,255,255,0.15)"/>
+</svg>

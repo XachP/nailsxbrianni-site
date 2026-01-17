@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nails x Brianni</title>
+  <meta name="description" content="Book nails with Nails x Brianni. Pink, clean, and professional." />
+  <meta name="theme-color" content="#ff4fa3" />
+  <meta property="og:title" content="Nails x Brianni" />
+  <meta property="og:description" content="Soft glam sets with clean girl precision. Book your appointment today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <main class="main" id="app">
+      <section class="page page-home" data-route="home">
+        <header class="site-header">
+          <div class="brand">
+            <div class="logo-badge">NXB</div>
+            <div class="brand-text">
+              <div class="brand-name" data-brand-name>Nails x Brianni</div>
+              <div class="brand-tagline" data-brand-tagline>Soft glam sets with clean girl precision.</div>
+            </div>
+          </div>
+          <nav class="nav-links" id="mainNav"></nav>
+        </header>
+
+        <section class="hero-grid reveal">
+          <div class="hero-content">
+            <p class="eyebrow">Now booking private appointments</p>
+            <h1 class="hero-title" data-brand-name>Nails x Brianni</h1>
+            <p class="tagline" data-brand-tagline>Soft glam sets with clean girl precision.</p>
+            <div class="button-row" id="heroCtas"></div>
+          </div>
+          <div class="hero-card">
+            <div class="card note-card" id="homeDeposit"></div>
+            <div class="card quick-card" id="homeHighlights"></div>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-title">Quick Links</div>
+          <div class="quick-links" id="quickLinks"></div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-title">Featured Services</div>
+          <div class="grid" id="homeServices"></div>
+          <div class="section-actions">
+            <a class="button-outline" href="#/services">See All Services</a>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-title">Collections Preview</div>
+          <div class="gallery-grid" id="homeGallery"></div>
+          <div class="section-actions">
+            <a class="button-outline" href="#/collections">View Full Gallery</a>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-title">Client Love</div>
+          <div class="grid testimonial-grid" id="testimonialsGrid"></div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-title">Location</div>
+          <div class="location-grid">
+            <div class="card location-card" id="locationDetails"></div>
+            <div class="card map-card">
+              <iframe id="locationMap" title="Map to Nails x Brianni" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="button-outline" id="locationMapLink" target="_blank" rel="noopener">Open in Maps</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="card contact-card reveal" id="homeContact"></div>
+      </section>
+
+      <section class="page page-book" data-route="book" hidden>
+        <div class="page-head reveal">
+          <a class="back-link" href="#/home">Back to Home</a>
+          <h2>Book an Appointment</h2>
+          <p class="subtext" id="bookDeposit"></p>
+        </div>
+
+        <div class="booking-panels reveal">
+          <div class="booking-panel card" id="schedulerPanel">
+            <h3 class="panel-title" id="schedulerTitle">Online Scheduler</h3>
+            <div class="embed-card" id="schedulerEmbed"></div>
+            <p class="hint" id="schedulerHint"></p>
+
+            <form class="form hidden" id="customBookingForm">
+              <div class="input-group">
+                <label for="customService">Service</label>
+                <select id="customService" name="service" required></select>
+              </div>
+              <div class="input-group">
+                <label for="customDate">Preferred date</label>
+                <input id="customDate" name="date" type="date" required />
+              </div>
+              <div class="input-group">
+                <label for="customTime">Preferred time</label>
+                <input id="customTime" name="time" type="time" required />
+              </div>
+              <div class="input-group">
+                <label for="customName">Full name</label>
+                <input id="customName" name="name" type="text" required />
+              </div>
+              <div class="input-group">
+                <label for="customPhone">Phone</label>
+                <input id="customPhone" name="phone" type="tel" required />
+              </div>
+              <div class="input-group">
+                <label for="customEmail">Email</label>
+                <input id="customEmail" name="email" type="email" required />
+              </div>
+              <div class="input-group">
+                <label for="customNotes">Notes</label>
+                <textarea id="customNotes" name="notes" rows="3" placeholder="Design ideas, length, shape."></textarea>
+              </div>
+              <button class="button-primary" type="submit">Request Booking</button>
+              <p class="hint" id="customBookingHint"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page-services" data-route="services" hidden>
+        <div class="page-head reveal">
+          <a class="back-link" href="#/home">Back to Home</a>
+          <h2>Services</h2>
+          <p class="subtext">Starting prices. Final pricing depends on design and length.</p>
+        </div>
+        <div class="grid reveal" id="servicesGrid"></div>
+      </section>
+
+      <section class="page page-admin" data-route="admin" hidden>
+        <div class="page-head reveal">
+          <a class="back-link" href="#/home">Back to Home</a>
+          <h2>Admin</h2>
+          <p class="subtext">Manage services, pricing, and home highlights.</p>
+        </div>
+        <div class="card admin-access reveal" id="adminAccess">
+          <h3>Admin Access</h3>
+          <p class="hint">Enter the admin PIN to edit services and collections.</p>
+          <button class="button-primary" type="button" id="adminUnlock">Unlock Admin</button>
+        </div>
+        <section class="section hidden" id="servicesEditor">
+          <div class="section-title">Services Manager</div>
+          <div class="card editor-card">
+            <div class="editor-toolbar">
+              <button class="button-outline" type="button" id="servicesAddService">Add Service</button>
+              <button class="button-outline" type="button" id="servicesReset">Reset to Defaults</button>
+              <button class="button-primary" type="button" id="servicesSave">Save Changes</button>
+            </div>
+            <div class="card subtle admin-settings">
+              <h4>Admin Settings</h4>
+              <div class="input-group">
+                <label for="servicesPinInput">Admin PIN</label>
+                <input id="servicesPinInput" type="password" placeholder="Set a new PIN" />
+              </div>
+              <button class="button-outline small" type="button" id="servicesPinSave">Update PIN</button>
+              <p class="hint" id="servicesPinHint">PIN saves to this browser only. Update config.json to publish.</p>
+            </div>
+            <div class="stack" id="servicesEditorList"></div>
+            <p class="hint" id="servicesEditorStatus">Edits save to this browser only. To publish, copy updates into config.json.</p>
+          </div>
+        </section>
+        <section class="section hidden" id="collectionsEditor">
+          <div class="section-title">Collections Manager</div>
+          <div class="card editor-card">
+            <div class="editor-toolbar">
+              <button class="button-outline" type="button" id="collectionsAddCategory">Add Collection</button>
+              <button class="button-outline" type="button" id="collectionsReset">Reset to Defaults</button>
+              <button class="button-primary" type="button" id="collectionsSave">Save Changes</button>
+            </div>
+            <div class="stack" id="collectionsEditorList"></div>
+            <p class="hint" id="collectionsEditorStatus">Edits save to this browser only. To publish, copy updates into config.json.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="page page-collections" data-route="collections" hidden>
+        <div class="page-head reveal">
+          <a class="back-link" href="#/home">Back to Home</a>
+          <h2>Collections</h2>
+          <p class="subtext">Browse sets by vibe and see the latest work.</p>
+        </div>
+
+        <div class="section reveal" id="collectionsLocalSection">
+          <div class="section-title">Curated Sets</div>
+          <div class="tabs" id="collectionTabs"></div>
+          <div class="gallery-grid" id="collectionGrid"></div>
+        </div>
+      </section>
+
+      <section class="page page-policies" data-route="policies" hidden>
+        <div class="page-head reveal">
+          <a class="back-link" href="#/home">Back to Home</a>
+          <h2>Policies</h2>
+          <p class="subtext">Please read before booking.</p>
+        </div>
+        <div class="stack reveal" id="policiesStack"></div>
+      </section>
+
+    </main>
+  </div>
+  <div class="mobile-cta-bar">
+    <div class="mobile-cta-content">
+      <div>
+        <div class="cta-label">Ready for your set?</div>
+        <div class="cta-subtext" id="mobileCtaSubtext">Secure your spot with a $10 deposit.</div>
+      </div>
+      <a class="button-primary" id="mobileBookCta" href="#/book">Book Now</a>
+    </div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>

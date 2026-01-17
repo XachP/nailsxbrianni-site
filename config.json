@@ -1,0 +1,161 @@
+{
+  "brand": {
+    "name": "Nails x Brianni",
+    "tagline": "Soft glam sets with clean girl precision."
+  },
+  "links": {
+    "book": "#/book",
+    "services": "#/services",
+    "collections": "#/collections",
+    "policies": "#/policies",
+    "shop": "https://www.amazon.com/shop/nailsxbrianni",
+    "instagram": "https://www.instagram.com/nailsxbrianni/",
+    "tiktok": "https://www.tiktok.com/@nailsxbrianni",
+    "admin": "/admin/"
+  },
+  "booking": {
+    "mode": "embed",
+    "deposit": {
+      "type": "fixed",
+      "amount": 10,
+      "currency": "USD"
+    },
+    "embed": {
+      "provider": "calendly",
+      "embedCode": "<div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/zacharyplumey2001/30min?hide_event_type_details=1&hide_gdpr_banner=1\" style=\"min-width:320px;height:700px;\"></div>\n<script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\" async></script>",
+      "embedUrl": ""
+    },
+    "custom": {
+      "enabled": false,
+      "instructions": "Requests are reviewed within 24 hours. You will receive a confirmation text."
+    }
+  },
+  "services": [
+    {
+      "id": "gelx-short",
+      "name": "Gel-X Full Set (Short)",
+      "duration": "1h 30m",
+      "price": "$55+"
+    },
+    {
+      "id": "gelx-long",
+      "name": "Gel-X Full Set (Long)",
+      "duration": "2h",
+      "price": "$65+"
+    },
+    {
+      "id": "acrylic-full",
+      "name": "Acrylic Full Set",
+      "duration": "2h",
+      "price": "$60+"
+    },
+    {
+      "id": "fill-in",
+      "name": "Fill-In",
+      "duration": "1h 15m",
+      "price": "$40+"
+    },
+    {
+      "id": "gel-mani",
+      "name": "Gel Manicure",
+      "duration": "45m",
+      "price": "$30+"
+    },
+    {
+      "id": "nail-art",
+      "name": "Nail Art Add-On",
+      "duration": "20m",
+      "price": "$10+"
+    },
+    {
+      "id": "soak-off",
+      "name": "Soak Off",
+      "duration": "20m",
+      "price": "$15+"
+    }
+  ],
+  "servicesEditor": {
+    "enabled": true,
+    "pin": "brianni123"
+  },
+  "collections": {
+    "editor": {
+      "enabled": true,
+      "pin": ""
+    },
+    "categories": [
+      {
+        "id": "soft-pink",
+        "label": "Soft Pink",
+        "images": [
+          { "src": "assets/collection-1.svg", "alt": "Soft pink nails" },
+          { "src": "assets/collection-2.svg", "alt": "Sheer blush nails" },
+          { "src": "assets/collection-3.svg", "alt": "Rosy nude set" },
+          { "src": "assets/collection-4.svg", "alt": "Glossy pink set" }
+        ]
+      },
+      {
+        "id": "chrome-glow",
+        "label": "Chrome Glow",
+        "images": [
+          { "src": "assets/collection-2.svg", "alt": "Chrome glow nails" },
+          { "src": "assets/collection-5.svg", "alt": "Iridescent chrome set" },
+          { "src": "assets/collection-6.svg", "alt": "Silver chrome nails" },
+          { "src": "assets/collection-1.svg", "alt": "Shimmer finish set" }
+        ]
+      },
+      {
+        "id": "french-tips",
+        "label": "French Tips",
+        "images": [
+          { "src": "assets/collection-3.svg", "alt": "Classic french tips" },
+          { "src": "assets/collection-4.svg", "alt": "Pink french tips" },
+          { "src": "assets/collection-5.svg", "alt": "Micro french tips" },
+          { "src": "assets/collection-2.svg", "alt": "Glossy french set" }
+        ]
+      },
+      {
+        "id": "seasonal-pop",
+        "label": "Seasonal Pop",
+        "images": [
+          { "src": "assets/collection-6.svg", "alt": "Seasonal nail set" },
+          { "src": "assets/collection-1.svg", "alt": "Holiday nails" },
+          { "src": "assets/collection-2.svg", "alt": "Spring nail set" },
+          { "src": "assets/collection-3.svg", "alt": "Bold seasonal set" }
+        ]
+      }
+    ]
+  },
+  "policies": {
+    "deposit": "A non-refundable deposit is required to secure your appointment. Deposits apply to your total. No deposit = no appointment.",
+    "cancellation": "Cancel or reschedule at least 24 hours before your appointment. Late cancellations forfeit the deposit.",
+    "late": "There is a 10-minute grace period. After 10 minutes, your appointment may be cancelled and the deposit is forfeited.",
+    "noShow": "No-shows are charged 100% of the service. Future bookings require full prepayment."
+  },
+  "testimonials": [
+    {
+      "quote": "My set was flawless and lasted so long. The attention to detail is unmatched.",
+      "name": "Jada M.",
+      "service": "Gel-X Full Set"
+    },
+    {
+      "quote": "She understood the vibe immediately and the shape was perfect.",
+      "name": "Ari L.",
+      "service": "Acrylic Full Set"
+    },
+    {
+      "quote": "Clean, cute, and so professional. I always leave obsessed.",
+      "name": "Kayla R.",
+      "service": "Gel Manicure"
+    }
+  ],
+  "contact": {
+    "location": "Justice, Illinois",
+    "address": "Justice, IL 60458",
+    "email": "hello@nailsxbrianni.com",
+    "phone": "(404) 555-0134",
+    "parkingNote": "Free parking available behind the studio.",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Justice,+IL&output=embed",
+    "mapLink": "https://www.google.com/maps?q=Justice,+IL"
+  }
+}
