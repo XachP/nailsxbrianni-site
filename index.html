@@ -224,6 +224,24 @@
       <a class="button-primary" id="mobileBookCta" href="#/book">Book Now</a>
     </div>
   </div>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function () {
+        var hash = window.location.hash || "";
+        var search = window.location.search || "";
+        var hasToken = hash.indexOf("invite_token=") >= 0 ||
+          hash.indexOf("recovery_token=") >= 0 ||
+          hash.indexOf("access_token=") >= 0 ||
+          search.indexOf("invite_token=") >= 0 ||
+          search.indexOf("recovery_token=") >= 0 ||
+          search.indexOf("access_token=") >= 0;
+        if (hasToken && window.location.pathname.indexOf("/admin") !== 0) {
+          window.location.href = "/admin/" + (hash || search);
+        }
+      });
+    }
+  </script>
   <script src="app.js" defer></script>
 </body>
 </html>
